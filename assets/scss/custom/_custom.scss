@@ -419,3 +419,6 @@ section {
     }
   }
 }
+.breadcrumb-item+.breadcrumb-item::before {
+  color: rgba(245, 245, 245, 0.726)
+}

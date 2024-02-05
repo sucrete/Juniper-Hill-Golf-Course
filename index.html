@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tavern- Resort and Hotel Booking HTMl Template</title>
+  <title>Juniper Hill Golf Course</title>
 
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
@@ -18,6 +18,12 @@
 
   <!-- main css for template -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- reusable Lit components -->
+  <script type="module" src="./components/footer/about.js"></script>
+  <script type="module" src="./components/footer/links.js"></script>
+  <script type="module" src="./components/footer/contact.js"></script>
+  <script type="module" src="./components/footer/footer-bottom.js"></script>
 </head>
 
 <body>
@@ -31,138 +37,55 @@
 
 
   <!-- ========== Header Section Starts Here========== -->
-  <header class="header-section header-1">
-
+  <header class="header-section header-2">
     <div class="header-holder">
       <div class="header-menu-part">
-
-        <div class="header-top">
+        <div class="header-top open">
           <div class="container">
             <div class="header-top-area">
               <ul class="left">
                 <li>
-                  <i class="fa-solid fa-phone"></i> <span>+800-123-4567 6587</span>
+                  <a href="tel:5028758559" target="_blank"><i class="fa-solid fa-phone"></i> <span>(502)
+                      875-8559</span></a>
                 </li>
                 <li>
-                  <i class="fa-solid fa-envelope"></i> <span>tavernhotel@gmail.com</span>
+                  <a href="https://www.google.com/maps/place/800+Louisville+Rd,+Frankfort,+KY+40601/@38.1870876,-84.8920689,17z/data=!3m1!4b1!4m6!3m5!1s0x884274dd1fb67c8f:0x4499abf3494d7f04!8m2!3d38.1870834!4d-84.889494!16s%2Fg%2F11nfsfvnh5?entry=ttu"
+                    target="_blank"><i class="fa-solid fa-location-dot"></i> 800 Louisville Rd., Frankfort, KY 40601</a>
                 </li>
                 <li>
-                  <i class="fa-solid fa-location-dot"></i> Beverley, New York 224 USA
+                  <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
                 </li>
               </ul>
-              <div class="lang-select">
-                <span><i class="fa-solid fa-globe"></i></span>
-
-                <select class="form-select" aria-label="Select Language">
-                  <option selected> English</option>
-                  <option value="1"> Spanish</option>
-                  <option value="2"> French</option>
-                  <option value="3"> Italian</option>
-                </select>
-              </div>
             </div>
           </div>
 
         </div>
         <div class="container">
-          <div class="header-bottom d-flex flex-wrap justify-content-between align-items-center">
+          <div class="header-bottom pt-2 pb-2 pt-md-0 pb-md-0 d-flex flex-wrap justify-content-between align-items-center">
             <div class="brand-logo d-none d-lg-inline-block">
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/images/logo/logo.png" alt="logo">
+                  <img src="assets/images/logo/JHGC.svg" alt="logo">
                 </a>
               </div>
             </div>
             <div class="header-wrapper justify-content-lg-end">
               <div class="mobile-logo d-lg-none">
-                <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/logo/JHGC.svg" alt="logo"></a>
               </div>
               <div class="menu-area">
                 <ul class="menu">
+                  <li><a href="rates.html" style="padding-right: 0px">Rates</a></li>
                   <li>
-                    <a href="javascript:void(0);">Homes</a>
-                    <ul class="submenu">
-                      <li><a href="index.html">Home 1</a></li>
-                      <li><a href="index-2.html">Home 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li>
-                    <a href="javascript:void(0);">Rooms</a>
-                    <ul class="submenu">
-                      <li><a href="room-listing1.html">Room Listing 1</a></li>
-                      <li><a href="room-listing2.html">Room Listing 2</a></li>
-                      <li><a href="room-listing3.html">Room Listing 3</a></li>
-                      <li><a href="room-details.html">Room Details</a></li>
-                    </ul>
+                    <a href="the-course.html" style="padding-right: 0px">The Course</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);">Pages</a>
-                    <ul class="submenu">
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="booking.html">Booking</a></li>
-                      <li><a href="pricing.html">Pricing</a></li>
-                      <li><a href="faq.html">FAQ</a></li>
-                      <li>
-                        <a href="javascript:void(0);">Rooms</a>
-                        <ul class="submenu">
-                          <li><a href="room-listing1.html">Room Listing 1</a></li>
-                          <li><a href="room-listing2.html">Room Listing 2</a></li>
-                          <li><a href="room-listing3.html">Room Listing 3</a></li>
-                          <li><a href="room-details.html">Room Details</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">Services</a>
-                        <ul class="submenu">
-                          <li><a href="services.html">All Services</a></li>
-                          <li><a href="service-details.html">Service Details</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">Staffs</a>
-                        <ul class="submenu">
-                          <li><a href="team.html">All Staffs</a></li>
-                          <li><a href="team-single.html">Staff Details</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">Galleries</a>
-                        <ul class="submenu">
-                          <li><a href="gallery-1.html">Gallery 1</a></li>
-                          <li><a href="gallery-2.html">Gallery 2</a></li>
-                          <li><a href="gallery-3.html">Gallery 3</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="account.html">Account</a></li>
-                      <li><a href="404.html">404</a></li>
-                    </ul>
+                    <a href="pro-shop.html" style="padding-right: 0px">Pro Shop</a>
                   </li>
-                  <li>
-                    <a href="javascript:void(0);">Blogs</a>
-                    <ul class="submenu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-single.html">Blog Single</a></li>
-                    </ul>
-                  </li>
+
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="search-container">
-                  <a href="#" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-
-                  <div class="search-bar">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search Here" aria-label="Search Input"
-                        aria-describedby="basic-addon2">
-                      <button class="input-group-text" id="basic-addon2">Search</button>
-                    </div>
-
-                  </div>
-                </div>
-
-
-                <a href="booking.html" class="booking-btn"><span>Book
-                    Now</span></a>
+                <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
 
                 <!-- toggle icons -->
                 <div class="header-bar d-lg-none">
@@ -170,18 +93,12 @@
                   <span></span>
                   <span></span>
                 </div>
-                <div class="ellepsis-bar d-lg-none">
-                  <i class="fa-solid fa-circle-info"></i>
-                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-
-
   </header>
   <!-- ========== Header Section Ends Here========== -->
 
@@ -189,62 +106,20 @@
 
 
   <!-- ========== Hero Section start Here========== -->
-  <section class="hero">
-    <div class="hero__slider swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="hero__wrapper" style="background-image:url(assets/images/hero/home1/bg.jpg)">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="hero__content hero__content--center">
-                    <h1>Book Your Stay & Enjoy
-                      Luxury Experience</h1>
-                    <p class="text-lg">The best hotel for your family</p>
-                    <a href="#" class="custom-btn"><span>Explore Room</span></a>
-                  </div>
-                </div>
-              </div>
+  <section class="hero hero--home2">
+    <div class="hero__wrapper  " style="background-image:url(assets/images/1_golf_images/man_on_fairway.jpeg)">
+      <div class="container gx-4 gx-sm-0 pt-5 pb-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <div class="hero__content" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+              <h1>Frankfort's go-to golf destination</h1>
+              <a href="/rates.html" class="custom-btn"><span>Greens Fees</span></a>
+            </div>
+          </div>
 
-            </div>
-          </div>
         </div>
-        <div class="swiper-slide">
-          <div class="hero__wrapper" style="background-image:url(assets/images/hero/home1/bg.jpg)">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="hero__content hero__content--center">
-                    <h1>Book Your Stay & Enjoy
-                      Luxury Experience</h1>
-                    <p class="text-lg">The best hotel for your family</p>
-                    <a href="#" class="custom-btn"><span>Explore Room</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="hero__wrapper" style="background-image:url(assets/images/hero/home1/bg.jpg)">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="hero__content hero__content--center">
-                    <h1>Book Your Stay & Enjoy
-                      Luxury Experience</h1>
-                    <p class="text-lg">The best hotel for your family</p>
-                    <a href="#" class="custom-btn"><span>Explore Room</span></a>
-                  </div>
-                </div>
-              </div>
 
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="hero__slider-prev"><i class="fa-solid fa-arrow-left"></i></div>
-      <div class="hero__slider-next"><i class="fa-solid fa-arrow-right"></i></div>
     </div>
   </section>
   <!-- ========== Hero Section Ends Here========== -->
@@ -253,1264 +128,49 @@
 
 
 
-  <!-- ========== Booking Form Section start Here========== -->
-  <div class="booking booking--uplifted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-    <div class="container">
-      <div class="booking__wrapper booking__wrapper--has-shadow">
-        <div class="row">
-          <div class="col-12">
-            <form action="#" class="booking__form">
-              <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                  <div class="booking__form-inputgroup">
-                    <label for="input1" class="form-label">Check In</label>
-                    <div class="booking__form-date">
-                      <input type="text" class="date-input form-control" placeholder="May 29, 2023" id="input1">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="booking__form-inputgroup">
-                    <label for="input2" class="form-label">Adult</label>
-                    <select class="nice-selct wide form-select" aria-label="Default select example" id="input2">
-                      <option selected>01</option>
-                      <option value="1">02</option>
-                      <option value="2">03</option>
-                      <option value="3">04</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="booking__form-inputgroup">
-                    <label for="input3" class="form-label">Room</label>
-                    <select class="nice-selct wide form-select" aria-label="Default select example" id="input3">
-                      <option selected>01</option>
-                      <option value="1">02</option>
-                      <option value="2">03</option>
-                      <option value="3">04</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="booking__form-inputgroup">
-                    <label for="input4" class="form-label">Check In</label>
-                    <div class="booking__form-date">
-                      <input type="text" class="date-input form-control" placeholder="June 3, 2023" id="input4">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="booking__form-inputgroup">
-                    <label for="input5" class="form-label">Children</label>
-                    <select class="nice-selct wide form-select" aria-label="Default select example" id="input5">
-                      <option selected>01</option>
-                      <option value="1">02</option>
-                      <option value="2">03</option>
-                      <option value="3">04</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="booking__form-btn">
-                    <button class="custom-btn custom-btn--fluid"><span>Book Now</span></button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ========== Booking Form Section Ends Here========== -->
 
 
-
-
-
-  <!-- ========== Feature Section start Here========== -->
-  <section class="feature padding-top padding-bottom">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+  <!-- ========== Info Section Start Here========== -->
+  <section class="blog info-home padding-top padding-bottom bg--section-color">
+    <div class="container gx-4 gx-md-0">
+      <div class="section-header" >
         <div class="section-header__content">
-          <h2>Tavern Hotel Your Excellent Choice For Vacation.</h2>
-          <p>Continually productize compelling quality for packed in business consulting elated
-            Setting up to website and creating pages.
-          </p>
+          <p class="subtitle">About Us</p>
+          <h2>Juniper Hill Golf Course</h2>
         </div>
       </div>
-      <div class="feature__wrapper">
-        <div class="row g-4">
-          <div class="col-xl-3 col-md-6">
-            <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
-              <div class="feature__item-inner">
-                <div class="feature__item-thumb">
-                  <img src="assets/images/feature/icons/1.png" alt="feature icon">
-                </div>
-                <div class="feature__item-content">
-                  <h3>Customer Support</h3>
-                  <p>24 Hours Support</p>
-                </div>
-              </div>
-            </div>
+      <div class="blog__wrapper">
+        <div class="row justify-content-between gap-7">
+          <div class="col-lg-8 mb-3 mb-sm-0 pb-5 pb-sm-0">
+            <p><strong>Juniper Hill Golf Course</strong> is an 18-Hole Municipal Golf Course built by the City of
+              Frankfort, Kentucky
+              which opened for play on May 1, 1957. It quickly became one of the most popular golf courses in Kentucky.
+
+              Juniper Hill features active golfing associations for all ages and skill levels. The Juniper Hill Golf
+              Association along with the Juniper Hill Ladies' Golf Club are two of the largest organizations in their
+              respective divisions. The Sweet Swingin' Seniors play weekly and many non-profit groups use Juniper Hill
+              to host fundraising golf events which help raise needed revenue for many local charities. Over a quarter
+              of a million dollars annually is raised through golf events held at Juniper Hill.
+
+              The Annual Governor's Open which debuted in 1965 has become one of the elite golf tournaments in Kentucky.
+              It attracts top golf professionals and amateurs from all across the nation. Many current and former tour
+              pros have competed over the years including Steve Flesch, Jodie Mudd, Russ Cochran, Fuzzy Zoeller, as well
+              as the late Larry Gilbert.</p>
           </div>
-          <div class="col-xl-3 col-md-6">
-            <div class="feature__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <div class="feature__item-inner">
-                <div class="feature__item-thumb">
-                  <img src="assets/images/feature/icons/2.png" alt="feature icon">
-                </div>
-                <div class="feature__item-content">
-                  <h3>Family Size Room</h3>
-                  <p>Available Room</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6">
-            <div class="feature__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-              <div class="feature__item-inner">
-                <div class="feature__item-thumb">
-                  <img src="assets/images/feature/icons/3.png" alt="feature icon">
-                </div>
-                <div class="feature__item-content">
-                  <h3>Conference Room</h3>
-                  <p>Conference Room Available</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6">
-            <div class="feature__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <div class="feature__item-inner">
-                <div class="feature__item-thumb">
-                  <img src="assets/images/feature/icons/4.png" alt="feature icon">
-                </div>
-                <div class="feature__item-content">
-                  <h3>Free Wifi Corner</h3>
-                  <p>Free Wifi</p>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-3 align-items-center">
+            <p class="text-center">Frankfort, KY</p>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/38d20n84d87/frankfort/?unit=us"
+              data-font="Helvetica" data-days="3" data-textcolor="#70717B" data-highcolor="#70717B"
+              data-lowcolor="#70717B" data-raincolor="#5943e9">Frankfort, KY, USA</a>
+            <script>
+              !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+            </script>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ========== Feature Section Ends Here========== -->
-
-
-
-
-
-  <!-- ========== Room Section start Here========== -->
-  <section class="room padding-top padding-bottom bg--section-color">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
-        <div class="section-header__content">
-          <h2>Tavern Hotel Best Rooms & Suites.</h2>
-          <p>Continually productize compelling quality for packed in business consulting elated
-            Setting up to website and creating pages.
-          </p>
-        </div>
-      </div>
-      <div class="room__wrapper">
-        <div class="row g-4">
-          <div class="col-xl-4 col-md-6">
-            <div class="room__item room__item--style1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/1.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Family Room</a></h3>
-                      <p>Available room</p>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$220</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                  <div class="room__item-body">
-                    <p>Continually productize compelling quality packed elated productize compelling quality.</p>
-                    <ul class="room__feature">
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/1.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>4 Person</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/2.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>King bed</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/3.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>free wifi</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/4.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>36 sqm</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/5.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Shower</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/6.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Breakfast</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>Booking Now</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6">
-            <div class="room__item room__item--style1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/2.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Delux Room</a></h3>
-                      <p>Available room</p>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$320</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                  <div class="room__item-body">
-                    <p>Continually productize compelling quality packed elated productize compelling quality.</p>
-                    <ul class="room__feature">
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/1.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>4 Person</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/2.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>King bed</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/3.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>free wifi</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/4.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>36 sqm</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/5.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Shower</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/6.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Breakfast</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>Booking Now</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6">
-            <div class="room__item room__item--style1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/3.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Single Room</a></h3>
-                      <p>Available room</p>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$200</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                  <div class="room__item-body">
-                    <p>Continually productize compelling quality packed elated productize compelling quality.</p>
-                    <ul class="room__feature">
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/1.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>4 Person</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/2.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>King bed</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/3.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>free wifi</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/4.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>36 sqm</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/5.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Shower</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/6.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Breakfast</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>Booking Now</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6">
-            <div class="room__item room__item--style1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/4.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Couple Room</a></h3>
-                      <p>Available room</p>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$350</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                  <div class="room__item-body">
-                    <p>Continually productize compelling quality packed elated productize compelling quality.</p>
-                    <ul class="room__feature">
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/1.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>4 Person</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/2.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>King bed</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/3.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>free wifi</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/4.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>36 sqm</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/5.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Shower</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/6.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Breakfast</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>Booking Now</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6">
-            <div class="room__item room__item--style1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/5.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Standar Room</a></h3>
-                      <p>Available room</p>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$250</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                  <div class="room__item-body">
-                    <p>Continually productize compelling quality packed elated productize compelling quality.</p>
-                    <ul class="room__feature">
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/1.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>4 Person</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/2.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>King bed</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/3.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>free wifi</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/4.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>36 sqm</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/5.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Shower</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/6.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Breakfast</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>Booking Now</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6">
-            <div class="room__item room__item--style1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/6.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">VIP Room</a></h3>
-                      <p>Available room</p>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$420</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                  <div class="room__item-body">
-                    <p>Continually productize compelling quality packed elated productize compelling quality.</p>
-                    <ul class="room__feature">
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/1.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>4 Person</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/2.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>King bed</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/3.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>free wifi</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/4.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>36 sqm</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/5.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Shower</p>
-                        </div>
-                      </li>
-
-                      <li class="room__feature-item">
-                        <div class="room__feature-icon">
-                          <img src="assets/images/room/icon/6.png" alt="feature icon">
-                        </div>
-                        <div class="room__feature-text">
-                          <p>Breakfast</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>Booking Now</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Room Section ends Here========== -->
-
-
-
-
-
-  <!-- ========== About Section start Here========== -->
-  <section class="about padding-top padding-bottom about--shape">
-    <div class="container">
-      <div class="about__wrapper">
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <div class="about__content" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="100">
-
-              <div class="common-header">
-                <p class="subtitle">Welcome to tavern</p>
-                <h2>Our Hotel has been present for over 20 years.</h2>
-              </div>
-              <p>Continually productize compelling quality for packed in business consulting elated
-                productize compelling quality for all packed in with all growth from quality elated
-                Setting up to website and creating pages.
-              </p>
-              <p>Continually productize compelling quality for packed in business consulting elated
-                productize compelling quality for all packed in with all growth from quality elated
-                Setting up to website and creating pages.
-              </p>
-              <div class="row g-4 my-5">
-                <div class="col-xl-6">
-                  <div class="about__item">
-                    <div class="about__item-inner">
-                      <div class="about__item-thumb">
-                        <img src="assets/images/about/icon/1.png" alt="About Icon">
-                      </div>
-                      <div class="about__item-content">
-                        <h5>Best Rate Guarantee</h5>
-                        <p>Strategy experience and an lytical expertise.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="about__item">
-                    <div class="about__item-inner">
-                      <div class="about__item-thumb">
-                        <img src="assets/images/about/icon/2.png" alt="About Icon">
-                      </div>
-                      <div class="about__item-content">
-                        <h5>No Booking Fee</h5>
-                        <p>Strategy experience and an lytical expertise.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="custom-btn"><span>Explore Now</span></a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about__image" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="100">
-              <div class="about__image-lg"><img src="assets/images/about/1.png" alt="About image"></div>
-              <div class="about__image-sm"><img src="assets/images/about/2.png" alt="About image"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== About Section ends Here========== -->
-
-
-
-  <!-- ========== Service Section start Here========== -->
-  <section class="service padding-top padding-bottom bg--section-color">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
-        <div class="section-header__content">
-          <h2>Tavern Hotel Services</h2>
-          <p>Continually productize compelling quality for packed in business consulting elated
-            Setting up to website and creating pages.
-          </p>
-        </div>
-      </div>
-      <div class="service__wrapper service__wrapper--home1" data-aos="fade-up" data-aos-duration="1000"
-        data-aos-delay="100">
-        <div class="service__slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="service__item1">
-                <div class="service__item1-inner">
-                  <div class="service__item1-thumb">
-                    <img src="assets/images/service/1.png" alt="service image">
-                  </div>
-                  <div class="service__item1-content">
-                    <div class="common-header">
-                      <p class="subtitle">Experience For The Senses</p>
-                      <h3>Relaxing Moment At Spa
-                        Center</h3>
-                    </div>
-                    <p>Continually productize compelling quality for packed in consulting
-                      productize compelling quality for all packed in with growth from
-                      Setting up to website and creating pages.
-                    </p>
-                    <ul class="service__aminities">
-                      <li class="service__aminities-item">
-                        <div class="service__aminities-name">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <h5>Facial Care</h5>
-                        </div>
-                        <p class="service__aminities-value">
-                          30 minutes/ per day
-                        </p>
-                      </li>
-                      <li class="service__aminities-item">
-                        <div class="service__aminities-name">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <h5>Body Massage</h5>
-                        </div>
-                        <p class="service__aminities-value">
-                          60 minutes/ per day
-                        </p>
-                      </li>
-                      <li class="service__aminities-item">
-                        <div class="service__aminities-name">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <h5>Aroma Therapy</h5>
-                        </div>
-                        <p class="service__aminities-value">
-                          20 minutes/ per day
-                        </p>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>View More</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="service__item1">
-                <div class="service__item1-inner">
-                  <div class="service__item1-thumb">
-                    <img src="assets/images/service/1.png" alt="service image">
-                  </div>
-                  <div class="service__item1-content">
-                    <div class="common-header">
-                      <p class="subtitle">Experience For The Senses</p>
-                      <h3>Relaxing Moment At Spa
-                        Center</h3>
-                    </div>
-                    <p>Continually productize compelling quality for packed in consulting
-                      productize compelling quality for all packed in with growth from
-                      Setting up to website and creating pages.
-                    </p>
-                    <ul class="service__aminities">
-                      <li class="service__aminities-item">
-                        <div class="service__aminities-name">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <h5>Facial Care</h5>
-                        </div>
-                        <p class="service__aminities-value">
-                          30 minutes/ per day
-                        </p>
-                      </li>
-                      <li class="service__aminities-item">
-                        <div class="service__aminities-name">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <h5>Body Massage</h5>
-                        </div>
-                        <p class="service__aminities-value">
-                          60 minutes/ per day
-                        </p>
-                      </li>
-                      <li class="service__aminities-item">
-                        <div class="service__aminities-name">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <h5>Aroma Therapy</h5>
-                        </div>
-                        <p class="service__aminities-value">
-                          20 minutes/ per day
-                        </p>
-                      </li>
-                    </ul>
-                    <a href="#" class="custom-btn"><span>View More</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="service__slider-prev"><i class="fa-solid fa-arrow-left"></i></div>
-        <div class="service__slider-next"><i class="fa-solid fa-arrow-right"></i></div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Service Section ends Here========== -->
-
-
-
-
-
-  <!-- ========== Popular Room Section start Here========== -->
-  <section class="room room--popular padding-top padding-bottom">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
-        <div class="section-header__content">
-          <h2>Tavern Hotel Popular Rooms & Suites.</h2>
-          <p>Continually productize compelling quality for packed in business consulting elated
-            Setting up to website and creating pages.
-          </p>
-        </div>
-      </div>
-      <div class="room__wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 order-md-3 order-lg-1">
-            <div class="room__item room__item--style2">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/1.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Family Room</a></h3>
-                      <a href="#" class="custom-btn custom-btn--bordered"><span>Booking Now</span></a>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$220</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8 order-md-2">
-            <div class="room__item room__item--style2">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/lg1.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Delux Room</a></h3>
-                      <a href="#" class="custom-btn custom-btn--bordered"><span>Booking Now</span></a>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$320</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8 order-md-4">
-            <div class="room__item room__item--style2">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/lg2.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Single Room</a></h3>
-                      <a href="#" class="custom-btn custom-btn--bordered"><span>Booking Now</span></a>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$200</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 order-md-3 order-lg-4">
-            <div class="room__item room__item--style2">
-              <div class="room__item-inner">
-                <div class="room__item-thumb">
-                  <img src="assets/images/room/home1/4.png" alt="room image">
-                </div>
-                <div class="room__item-content">
-                  <div class="room__item-header">
-                    <div class="room__item-name">
-                      <ul class="rating">
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                        <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h3><a href="room-details.html">Couple Room</a></h3>
-                      <a href="#" class="custom-btn custom-btn--bordered"><span>Booking Now</span></a>
-                    </div>
-
-                    <div class="room__item-price">
-                      <h3>$350</h3>
-                      <p>Per Night</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Popular Room Section ends Here========== -->
-
-
-
-
-
-  <!-- ========== Testimonial Section start Here========== -->
-  <section class="testimonial testimonial--shape bg--section-color">
-    <div class="container-fluid px-0">
-      <div class="testimonial__wrapper">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <div class="testimonial__image" data-aos="fade-right" data-aos-duration="1000">
-              <img src="assets/images/testimonial/1.png" alt="Testimonial Image">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="testimonial__content" data-aos="fade-left" data-aos-duration="1000">
-              <div class="common-header">
-                <p class="subtitle">Our Testimonial</p>
-                <h2>What Our Customer say About Hotel Tavern
-                </h2>
-              </div>
-              <p>We are proud to offer top range of comprehensive employment services such payroll and benefits
-                administration management
-                assistance with global ranch business range global business range employment
-              </p>
-              <div class="testimonial__author">
-                <div class="testimonial__author-inner">
-                  <div class="testimonial__author-thumb">
-                    <img src="assets/images/testimonial/author/1.png" alt="author image">
-                  </div>
-                  <div class="testimonial__author-content">
-                    <h5>Alexander Joe</h5>
-                    <p>Senior Marketer</p>
-                    <ul class="rating">
-                      <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                      <li class="rating__star"><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Testimonial Section ends Here========== -->
-
-
-
-
-
-  <!-- ========== Sponsor Section ends Here========== -->
-  <div class="sponsor">
-    <div class="container">
-      <div class="sponsor__wrapper">
-        <div class="sponsor__slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="sponsor__item">
-                <img src="assets/images/sponsor/1.png" alt="Sponsor image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsor__item">
-                <img src="assets/images/sponsor/2.png" alt="Sponsor image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsor__item">
-                <img src="assets/images/sponsor/3.png" alt="Sponsor image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsor__item">
-                <img src="assets/images/sponsor/4.png" alt="Sponsor image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsor__item">
-                <img src="assets/images/sponsor/5.png" alt="Sponsor image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsor__item">
-                <img src="assets/images/sponsor/6.png" alt="Sponsor image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsor__item">
-                <img src="assets/images/sponsor/6.png" alt="Sponsor image">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ========== Sponsor Section ends Here========== -->
-
-
-
-
-
-  <!-- ========== Blog Section start Here========== -->
-  <section class="blog padding-top padding-bottom bg--contain" style="background-image:url(assets/images/blog/bg.png)">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
-        <div class="section-header__content">
-          <p class="subtitle">Latest News</p>
-          <h2>Our Latest News & Articles</h2>
-        </div>
-      </div>
-      <div class="blog__wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="blog__item blog__item--home">
-              <div class="blog__item-inner">
-                <div class="blog__item-thumb">
-                  <img src="assets/images/blog/home/1.png" alt="blog image">
-                </div>
-                <div class="blog__item-content">
-                  <ul class="blog__meta d-flex flex-wrap align-items-center mb-15">
-                    <li class="blog__meta-author">
-                      <a href="#"><span><i class="fa-solid fa-user"></i></span> Jhon
-                        Doe</a>
-                    </li>
-                    <li class="blog__meta-date">
-                      <a href="#"><span><i class="fa-solid fa-calendar-days"></i></span>
-                        30
-                        December 2023</a>
-                    </li>
-                  </ul>
-                  <h3><a href="blog-single.html">How to Booking Room Online</a></h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="row g-4">
-              <div class="col-12">
-                <div class="blog__item blog__item--horizontal">
-                  <div class="blog__item-inner">
-                    <div class="blog__item-thumb">
-                      <img src="assets/images/blog/home/2.png" alt="blog image">
-                    </div>
-                    <div class="blog__item-content">
-                      <h3><a href="blog-single.html">How to Booking Room Online</a></h3>
-                      <ul class="blog__meta d-flex flex-wrap align-items-center mb-10">
-                        <li class="blog__meta-author">
-                          <a href="#"><span><i class="fa-solid fa-user"></i></span> Jhon
-                            Doe</a>
-                        </li>
-                        <li class="blog__meta-date">
-                          <a href="#"><span><i class="fa-solid fa-calendar-days"></i></span>
-                            30
-                            December 2023</a>
-                        </li>
-                      </ul>
-                      <a href="blog-single.html" class="text-btn"><span>Read More</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="blog__item blog__item--horizontal">
-                  <div class="blog__item-inner">
-                    <div class="blog__item-thumb">
-                      <img src="assets/images/blog/home/3.png" alt="blog image">
-                    </div>
-                    <div class="blog__item-content">
-                      <h3><a href="blog-single.html">How to Booking Room Online</a></h3>
-                      <ul class="blog__meta d-flex flex-wrap align-items-center mb-10">
-                        <li class="blog__meta-author">
-                          <a href="#"><span><i class="fa-solid fa-user"></i></span> Rassel mrh</a>
-                        </li>
-                        <li class="blog__meta-date">
-                          <a href="#"><span><i class="fa-solid fa-calendar-days"></i></span>
-                            30
-                            December 2023</a>
-                        </li>
-                      </ul>
-                      <a href="blog-single.html" class="text-btn"><span>Read More</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="blog__item blog__item--horizontal">
-                  <div class="blog__item-inner">
-                    <div class="blog__item-thumb">
-                      <img src="assets/images/blog/home/4.png" alt="blog image">
-                    </div>
-                    <div class="blog__item-content">
-                      <h3><a href="blog-single.html">Get Start Booking Room Today</a></h3>
-                      <ul class="blog__meta d-flex flex-wrap align-items-center mb-10">
-                        <li class="blog__meta-author">
-                          <a href="#"><span><i class="fa-solid fa-user"></i></span> Shah Jahan</a>
-                        </li>
-                        <li class="blog__meta-date">
-                          <a href="#"><span><i class="fa-solid fa-calendar-days"></i></span>
-                            30
-                            December 2023</a>
-                        </li>
-                      </ul>
-                      <a href="blog-single.html" class="text-btn"><span>Read More</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Blog Section ends Here========== -->
+  <!-- ========== info Section ends Here========== -->
 
 
 
@@ -1519,160 +179,42 @@
   <!-- ========== Footer Section start Here========== -->
   <footer class="footer">
 
-    <!-- Footer Newsletter -->
-    <div class="newsletter newsletter--lowerd">
-      <div class="container">
-        <div class="newsletter__wrapper">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <div class="newsletter__content text-center">
-                <div class="common-header">
-                  <p class="subtitle">Get Update</p>
-                  <h2>Get Latest Updates and Deals
-                  </h2>
-                </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Enter Your mail"
-                    aria-label="Subscirbe to Newsletter" aria-describedby="newsletter-input">
-                  <button class="subscribe-btn" id="newsletter-input">Subscribe</button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <!-- Main footer part -->
-    <div class="footer__wrapper padding-top padding-top--2x padding-bottom">
-      <div class="container">
-        <div class="row g-5">
+    <div class="footer__wrapper padding-top padding-top padding-bottom pb-0">
+      <div class="container gx-4 gx-sm-0">
+        <div class="row g-5 pb-5">
 
-          <!-- footer about -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="footer__about">
-              <a class="footer__brand" href="index.html"><img src="assets/images/logo/logo.png" alt="Tavern logo"></a>
-              <p>Continually productize with compeling dome packed with all elated in utilize website and creating
-                supply</p>
-              <div class="social__block">
-                <h6>Follow Us:</h6>
-                <ul class="social">
-                  <li class="social__item">
-                    <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#" class="social__link"><i class="fab fa-discord"></i></a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#" class="social__link"><i class="fab fa-twitch"></i></a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <!-- about -->
+          <footer-about class="col-lg-3 col-sm-6"></footer-about>
 
-          <!-- useful links -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="footer__block">
-              <div class="footer__block-title">
-                <h3>Useful Links</h3>
-              </div>
-              <div class="footer__block-body">
-                <ul class="footer__links">
-                  <li class="footer__links-item"><a class="footer__link" href="#"><span><i
-                          class="fa-solid fa-arrow-right"></i></span> Room
-                      and
-                      Suits</a></li>
-                  <li class="footer__links-item"><a class="footer__link" href="#"><span><i
-                          class="fa-solid fa-arrow-right"></i></span>Resturant</a></li>
-                  <li class="footer__links-item"> <a class="footer__link" href="#"><span><i
-                          class="fa-solid fa-arrow-right"></i></span>
-                      Spa Center</a></li>
-                  <li class="footer__links-item"><a class="footer__link" href="#"><span><i
-                          class="fa-solid fa-arrow-right"></i></span>
-                      Swimming</a></li>
-                  <li class="footer__links-item"><a class="footer__link" href="#"><span><i
-                          class="fa-solid fa-arrow-right"></i></span>
-                      Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <!-- contact -->
+          <footer-contact class="col-lg-3 col-sm-6"></footer-contact>
 
-          <!-- Contact infos -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="footer__block">
-              <div class="footer__block-title">
-                <h3>Contact info</h3>
-              </div>
-              <div class="footer__block-body">
-                <ul class="footer__info">
-                  <li class="footer__info-item">
-                    <span><i class="fa-solid fa-phone"></i></span>
-                    <p>88130-589-745-6987
-                      +1655-456-523
-                    </p>
-                  </li>
-                  <li class="footer__info-item">
-                    <span><i class="fa-solid fa-clock"></i></span>
-                    <p>Mon-Fri 09:00-18:00 (except public holidays)
-                    </p>
-                  </li>
-                  <li class="footer__info-item">
-                    <span><i class="fa-solid fa-location-dot"></i></span>
-                    <p>25/2 Vokte Street Building
-                      Melborn City
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <!-- links -->
+          <footer-links class="col-lg-3 col-sm-6"></footer-links>
 
-          <!-- Gallery -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="footer__block">
-              <div class="footer__block-title">
-                <h3>Gallery</h3>
-              </div>
-              <div class="footer__block-body">
-                <ul class="footer__gallery">
-                  <li class="footer__gallery-item"><a href="#"><img src="assets/images/gallery/01.png"
-                        alt="gallery image"></a></li>
-                  <li class="footer__gallery-item"><a href="#"><img src="assets/images/gallery/02.png"
-                        alt="gallery image"></a></li>
-                  <li class="footer__gallery-item"><a href="#"><img src="assets/images/gallery/03.png"
-                        alt="gallery image"></a></li>
-                  <li class="footer__gallery-item"><a href="#"><img src="assets/images/gallery/04.png"
-                        alt="gallery image"></a></li>
-                  <li class="footer__gallery-item"><a href="#"><img src="assets/images/gallery/05.png"
-                        alt="gallery image"></a></li>
-                  <li class="footer__gallery-item"><a href="#"><img src="assets/images/gallery/06.png"
-                        alt="gallery image"></a></li>
-                </ul>
-              </div>
-            </div>
+          <!-- Weather -->
+          <div class="col-lg-3 col-sm-6 weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/38d20n84d87/frankfort/?unit=us"
+              data-label_1="FRANKFORT" data-label_2="Kentucky" data-days="3" data-textcolor="#ffffff"
+              data-highcolor="#ffffff" data-lowcolor="#ffffff" data-mooncolor="rgba(255, 255, 255, 0.58)"
+              data-raincolor="#5ebcfc">FRANKFORT Kentucky</a>
+            <script>
+              !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+            </script>
           </div>
         </div>
+        <hr class="opacity-100">
+        <footer-bottom class="row footer-bottom">
+
+        </footer-bottom>
+
       </div>
+
     </div>
-
-
-    <!-- Footer copyright part -->
-    <div class="footer__copyright py-30">
-      <div class="container">
-        <p class="text-center mb-0">© Copyright 2023. All Rights Reserved by LabArtisan</p>
-      </div>
     </div>
   </footer>
   <!-- ========== Footer Section ends Here========== -->
-
-
 
 
   <!-- scrollToTop start here -->
@@ -1692,7 +234,6 @@
   <script src="assets/js/countdown.min.js"></script>
   <script src="assets/js/lightcase.js"></script>
   <script src="assets/js/purecounter_vanilla.js"></script>
-  <script src="assets/js/kursor.min.js"></script>
   <script src="assets/js/progressbar.min.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
