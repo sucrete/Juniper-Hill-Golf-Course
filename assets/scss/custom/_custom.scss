@@ -1,0 +1,421 @@
+// 
+// 
+// custom.scss
+//
+// Place your own scss code here.I'm your place for additional custom code.
+// If you need to change the look of the theme go to _user-variables.css file to override Bootstrap and theme  !
+//
+//
+
+//the home page hero h1
+section .hero--home2 .hero__content h1 {
+  line-height: 100%;
+}
+
+
+
+//the top header on mobile
+.header-top-area {
+  .left {
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 991px) {
+      border: 0px solid transparent;
+    }
+
+    @include breakpoint(md) {
+      justify-content: end;
+    }
+
+    li {
+      align-items: center;
+
+      @include breakpoint(md) {
+        flex-grow: unset;
+      }
+
+      @media screen and (max-width: 767px) {
+        border: 0px solid transparent;
+      }
+
+      @media screen and (max-width: 575px) {
+        padding-top: 10px;
+        padding-bottom: 9.5px;
+      }
+
+      &:first-of-type {
+        padding-left: 0px;
+        display: flex;
+
+        @media screen and (max-width: 575px) {
+          padding-left: 2px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+
+      }
+
+      &:nth-of-type(3) {
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  .booking-btn {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+      background-color: #E8A41D;
+      border-radius: 0.25rem;
+      color: #15341c !important;
+      display: inline-block;
+      font-weight: 600;
+      padding: 0.25rem .75rem;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+//Hero content 
+.hero__content {
+
+  //.custom-btn button for "Greens Fees"
+  .custom-btn {
+    @media screen and (max-width: 991px) {
+      margin-block-start: 12px;
+      padding-inline: 1.2rem;
+      line-height: 38px;
+    }
+  }
+}
+
+
+//info section on home page
+.blog__wrapper {
+  p {
+    font-size: 20px;
+  }
+}
+
+
+//table on Rates page
+.rates__wrapper {
+  table {
+    th {
+
+      &:nth-of-type(2) {
+        width: 20%
+      }
+
+      &:nth-of-type(3) {
+        width: 15%
+      }
+    }
+  }
+
+  .season-passes {
+    table {
+      th {
+        &:nth-of-type(1) {
+          width: 92%
+        }
+      }
+
+      // tbody {
+      //     tr {
+      //         td:nth-of-type(2) {
+      //             text-align: right;
+      //         }
+      //     }
+      // }
+    }
+  }
+
+}
+
+
+
+
+//The Course page styling
+section.course {
+  @media screen and (max-width: 767px) {
+    padding-block-start: 30px
+  }
+}
+
+
+
+
+
+
+//Info section on Home page
+.info-home {
+  padding-top: 100px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+    padding-block-start: 65px;
+    padding-block-end: 120px;
+  }
+}
+
+
+//Contact Page
+section {
+  &.contact {
+    @media screen and (max-width: 767px) {
+      padding-block-end: 20px
+    }
+    
+  }
+}
+
+//.kirk-card on Contact page 
+.kirk-card {
+  padding: 2.5rem;
+  // border: 1px solid #cecece;
+
+  .pga-badge {
+    width: 25%;
+    height: auto;
+  }
+
+  h4 {
+    margin-block-end: 10px;
+  }
+
+  p {
+    line-height: 125%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .kirk-card {
+    position: relative;
+    padding: 1.5rem;
+
+    .pga-badge {
+      position: absolute;
+      width: 80px;
+      top: -45px;
+      right: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .kirk-card {
+    .pga-badge {
+      width: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .kirk-card {
+    position: relative;
+    padding: 1.5rem;
+
+    .pga-badge {
+      position: absolute;
+      width: 70px;
+      top: -50px;
+      right: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .kirk-card {
+    h4 {
+      line-height: 112%;
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 110%;
+      font-size: 14px;
+    }
+  }
+}
+
+//Pro Shop block
+.pro-shop-details {
+  table {
+    tbody {
+      tr {
+        td {
+          &:last-of-type {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    &.pro-shop-gallery {
+      .swiper-wrapper {
+        img {
+          height: 500px;
+        }
+      }
+    }
+  }
+}
+
+//Swiper Course Holes styling
+
+
+.image-caption {
+  font-family: "Cormorant";
+  font-size: 17px;
+  font-style: italic;
+  color: #216f11;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .text {
+  font-size: 15px;
+  line-height: 145%;
+  color: rgb(122, 122, 122)
+}
+
+.swiper-slide {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 23.5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px
+}
+
+//   .mySwiper {
+//     background:#f7f5ef;
+//     border-radius: 5px;
+//   }
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #e8a41c;
+}
+
+.swiper-navigation-prev,
+.swiper-navigation-next {
+  top: var(--swiper-navigation-top-offset, 38%);
+}
+
+.par {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #216f11;
+}
+
+.tee-table {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tee-table img {
+  width: 18px;
+  height: auto;
+}
+
+.tee-table td.tees {
+  width: 13%;
+}
+
+.tee-table td {
+  padding: 4px;
+}
+
+.tee-table tr td:last-of-type {
+  text-align: right;
+}
+
+.white-tees {
+  filter: drop-shadow(0px 0px 5px #b2b2b2);
+}
+
+@media (max-width: 1000px) {
+  .swiper-slide .contact__form {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .swiper-slide h2 {
+    padding-top: 1rem;
+  }
+}
+
+//Pro Shop page shop details
+section {
+  &.pro-shop-details {
+    &.padding-top {
+      padding-block-start: 90px;
+
+      @media screen and (max-width: 757px) {
+        padding-block-start: 50px;
+      }
+    }
+
+    &.padding-bottom {
+      @media screen and (max-width: 757px) {
+        padding-block-end: 70px;
+      }
+    }
+
+    th {
+      padding: 4px;
+    }
+  }
+}
