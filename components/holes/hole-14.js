@@ -16,12 +16,12 @@ export class HoleFourteen extends LitElement {
                 <p class="text">
                 A blind tee shot with a right to left hole shape while the ground slopes left to right to make the shot difficult. Any approach shot missing the green left or long is impossible to get up and down and bunkers guard the front left and right. This two-tier green is extremely difficult to putt. Beware of any pin position on the second tier and doubly beware any pin position on the right side of the second tier! Actually, beware of ANY pin position on this green!!!                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>345 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleFourteen extends LitElement {
                           <td>Red Tees</td>
                           <td>315 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>219 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

@@ -16,12 +16,12 @@ export class HoleTen extends LitElement {
                 <p class="text">
                 While making the turn if you ate a “Power Dog” in the pro shop you will probably hit your next shot 1-2 clubs farther so adjust your club selection.  Otherwise, the prevailing wind will add some uncertainty to the tee shot as well.  Try to start the ball to the right center of the green if possible.                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>178 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleTen extends LitElement {
                           <td>Red Tees</td>
                           <td>147 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>108 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

@@ -16,12 +16,12 @@ export class HoleTwelve extends LitElement {
                 <p class="text">
                 Trees border both sides of this tee shot making a straight tee shot imperative for a chance to reach the green in two.  The last 200 yards is all uphill and plays longer than the yardage.  This is a long two level green which slopes quickly from right to left particularly the top tier.  Beware of any pin placement on the top left or middle left of the green!                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>468 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleTwelve extends LitElement {
                           <td>Red Tees</td>
                           <td>426 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>297 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

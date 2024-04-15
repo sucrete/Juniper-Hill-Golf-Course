@@ -16,12 +16,12 @@ export class HoleFifteen extends LitElement {
                 <p class="text">
                 A short hole with multiple tee positions and multiple options off the tee.  On-course OB has been eliminated on the left side so long hitters can try to drive the green but trees guard both sides of the fairway and the small green is hard to hit from the rough.  This can be a birdie hole but trouble lurks everywhere on this hole.                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>345 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleFifteen extends LitElement {
                           <td>Red Tees</td>
                           <td>315 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>219 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

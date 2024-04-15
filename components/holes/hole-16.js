@@ -16,12 +16,12 @@ export class HoleSixteen extends LitElement {
                 <p class="text">
                 This is an intimidating tee shot with out of bounds left and trees to the right.  Even with a good tee shot a blind and uphill approach shot is difficult to judge distance on.  Any ball hit to the left and past the pin is almost impossible to get down in two.  The approach shot needs to stay to the right of the pin.  Putting on this green will cause most adults to begin looking for an adult beverage soon!  A par is a good score here.                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>380 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleSixteen extends LitElement {
                           <td>Red Tees</td>
                           <td>288 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>215 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

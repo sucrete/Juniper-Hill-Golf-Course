@@ -16,12 +16,12 @@ export class HoleFive extends LitElement {
                 <p class="text">
                 This is an awkward ‘blind” tee shot.  Tee shots landing 150 yards or so closer to the green will kick left into the rough.  However, the out of bounds fence on the right prevents anyone from hugging the right side too closely.  The approach shot is to a small two tiered green which is very difficult to putt and even more difficult to chip to particularly from the right side.  The back tier of the green is very fast from right to left!                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>355 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleFive extends LitElement {
                           <td>Red Tees</td>
                           <td>315 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>209 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

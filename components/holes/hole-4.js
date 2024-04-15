@@ -16,12 +16,12 @@ export class HoleFour extends LitElement {
                 <p class="text">
                 A bunker renovation three years ago added bunkers guarding both the front right and front left of the green to defend itself against long hitters trying to drive the green. Everything seems to bounce or lean from right to left on this hole so favor right center off the tee and keep your approach shot landing to the right of the hole and the ball should bounce toward your target.                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>355 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleFour extends LitElement {
                           <td>Red Tees</td>
                           <td>315 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>229 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

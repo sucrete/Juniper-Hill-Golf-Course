@@ -21,7 +21,7 @@ export class HoleNine extends LitElement {
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>428 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleNine extends LitElement {
                           <td>Red Tees</td>
                           <td>335 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>248 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

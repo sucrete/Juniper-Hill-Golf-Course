@@ -312,6 +312,7 @@ section {
 }
 
 .swiper-pagination-bullet {
+  margin: 0 !important;
   width: 24px;
   height: 24px;
   text-align: center;
@@ -322,8 +323,13 @@ section {
   opacity: 1;
   background: rgba(0, 0, 0, 0.1);
   display: inline-block;
-  border-radius: 99px;
+  // border-radius: 99px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    padding: 16px 0px;
+    flex: 1 0 9%;
+    height: auto;
+  }
 }
 
 .swiper-pagination {
@@ -333,7 +339,9 @@ section {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
-  padding-top: 20px
+  padding-top: 20px;
+  gap: 10px;
+  padding-top: 30px;
 }
 
 //   .mySwiper {
@@ -367,7 +375,9 @@ section {
 
 .tee-table img {
   width: 18px;
+  margin-top: 2px;
   height: auto;
+  filter: drop-shadow(0px 0px 3px #929292);
 }
 
 .tee-table td.tees {
@@ -382,9 +392,7 @@ section {
   text-align: right;
 }
 
-.white-tees {
-  filter: drop-shadow(0px 0px 5px #b2b2b2);
-}
+
 
 @media (max-width: 1000px) {
   .swiper-slide .contact__form {

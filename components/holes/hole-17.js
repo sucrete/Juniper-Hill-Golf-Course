@@ -16,12 +16,12 @@ export class HoleSeventeen extends LitElement {
                 <p class="text">
                 The longest par 3 on the course is made more difficult with a bunker guarding the right side of the green.  Most tee shots seem to come up short and to the right on the hole!  There appears to be some magnetic force making tee shots go right!  Everyone including the pros during the Governor’s Open love to make par on this hole!                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>218 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleSeventeen extends LitElement {
                           <td>Red Tees</td>
                           <td>137 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>82 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

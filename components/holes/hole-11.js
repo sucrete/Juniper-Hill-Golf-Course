@@ -16,12 +16,12 @@ export class HoleEleven extends LitElement {
                 <p class="text">
                 This is an awkward tee shot.  The OB fence on the left cuts in a little the farther up you go so long hitters need to be careful not to pull their tee shot.  Also, a little swale short of the green makes distance deceiving on the second shot and adds difficulty to club selection.  Any approach shot missing the green long or to either side is a very difficult up and down.  A par is always a great score here.                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>444 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleEleven extends LitElement {
                           <td>Red Tees</td>
                           <td>403 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>257 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

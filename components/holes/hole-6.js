@@ -16,12 +16,12 @@ export class HoleSix extends LitElement {
                 <p class="text">
                 This hole was redesigned completely.  Over 1,500 square feet of green was added to the back of the green complex which now stretches the hole out to 167 yards to the middle of the green and close to 180 to a back pin location.  The green speed is quicker than it looks.  Also, beware of the new grass bunker located short right of the green.  When the pin location is right front, the bunker is in play and is absolutely NO FUN!  (Or maybe it's a little bit of fun).                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>167 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleSix extends LitElement {
                           <td>Red Tees</td>
                           <td>113 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>102 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>

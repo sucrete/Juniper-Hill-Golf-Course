@@ -16,12 +16,12 @@ export class HoleThirteen extends LitElement {
                 <p class="text">
                 During a dry summer golfers are afraid of driving the ball into the creek short of the green.  Those same golfers during a wet spring into the prevailing wind may have to hit a long iron or hybrid for their approach shot.  No hole can play so different depending upon the weather conditions.  A good drive favoring the left side of the fairway makes the approach play much easier but distance control on the downhill approach shot is hard to judge.  There is no bail out.  Any approach short ends up in the creek and any ball landing over the green rolls to or through the OB fence over the green.                </p>
                 <div class="row">
-                  <div class="col col-xl-6 col-xxl-4">
+                  <div class="col col-xl-6">
                     <table class="table tee-table">
                       <tbody>
                         <tr>
                           <td class="tees th-sm"><img src="./assets/images/tees/gold.svg" alt="" aria-hidden="true"></td>
-                          <td>Gold Tees</td>
+                          <td>Black Tees</td>
                           <td>415 Yards</td>
                         </tr>
                         <tr>
@@ -39,6 +39,18 @@ export class HoleThirteen extends LitElement {
                           <td>Red Tees</td>
                           <td>370 Yards</td>
                         </tr>
+                        <tr>
+                      <td class="tees">
+                        <img
+                          src="./assets/images/tees/wildcats.png"
+                          alt=""
+                          aria-hidden="true"
+                          class="white-tees"
+                        />
+                      </td>
+                      <td>Wildcat Tees</td>
+                      <td>275 Yards</td>
+                    </tr>
                       </tbody>
                     </table>
                   </div>
