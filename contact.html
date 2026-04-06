@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juniper Hill Golf Course</title>
+  <title>Contact | Juniper Hill Golf Course</title>
 
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="assets/css/flatpickr.min.css">
 
   <!-- main css for template -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
    <!-- reusable Lit components -->
    <script type="module" src="./components/footer/about.js"></script>
@@ -28,8 +28,10 @@
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ===============>> Preloader start here <<================= -->
-  <div class="preloader">
+  <div class="preloader" aria-hidden="true">
     <div class="loader"></div>
   </div>
   <!-- ===============>> Preloader end here <<================= -->
@@ -43,19 +45,21 @@
         <div class="header-top open">
           <div class="container">
             <div class="header-top-area">
-              <ul class="left">
-                <li>
-                  <a href="tel:5028758559" target="_blank"><i class="fa-solid fa-phone"></i> <span>(502)
-                      875-8559</span></a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/maps/place/800+Louisville+Rd,+Frankfort,+KY+40601/@38.1870876,-84.8920689,17z/data=!3m1!4b1!4m6!3m5!1s0x884274dd1fb67c8f:0x4499abf3494d7f04!8m2!3d38.1870834!4d-84.889494!16s%2Fg%2F11nfsfvnh5?entry=ttu"
-                    target="_blank"><i class="fa-solid fa-location-dot"></i> 800 Louisville Rd., Frankfort, KY 40601</a>
-                </li>
-                <li>
-                  <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
-                </li>
-              </ul>
+              <nav aria-label="Utility links">
+                <ul class="left">
+                  <li>
+                    <a href="tel:5028758559"><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>(502)
+                        875-8559</span></a>
+                  </li>
+                  <li>
+                    <a href="https://www.google.com/maps/place/800+Louisville+Rd,+Frankfort,+KY+40601/@38.1870876,-84.8920689,17z/data=!3m1!4b1!4m6!3m5!1s0x884274dd1fb67c8f:0x4499abf3494d7f04!8m2!3d38.1870834!4d-84.889494!16s%2Fg%2F11nfsfvnh5?entry=ttu"
+                      target="_blank"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 800 Louisville Rd., Frankfort, KY 40601<span class="visually-hidden"> (opens in new tab)</span></a>
+                  </li>
+                  <li>
+                    <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
 
@@ -65,34 +69,35 @@
             <div class="brand-logo d-none d-lg-inline-block">
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/images/logo/JHGC.svg" alt="logo">
+                  <img src="assets/images/logo/JHGC.svg" alt="Juniper Hill Golf Course">
                 </a>
               </div>
             </div>
             <div class="header-wrapper justify-content-lg-end">
               <div class="mobile-logo d-lg-none">
-                <a href="index.html"><img src="assets/images/logo/JHGC.svg" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/logo/JHGC.svg" alt="Juniper Hill Golf Course"></a>
               </div>
               <div class="menu-area">
-                <ul class="menu">
-                  <li><a href="rates.html" style="padding-right: 0px">Rates</a></li>
-                  <li>
-                    <a href="the-course.html" style="padding-right: 0px">The Course</a>
-                  </li>
-                  <li>
-                    <a href="pro-shop.html" style="padding-right: 0px">Pro Shop</a>
-                  </li>
-
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <nav aria-label="Main navigation">
+                  <ul class="menu" id="main-menu">
+                    <li><a href="rates.html" style="padding-right: 0px">Rates</a></li>
+                    <li>
+                      <a href="the-course.html" style="padding-right: 0px">The Course</a>
+                    </li>
+                    <li>
+                      <a href="pro-shop.html" style="padding-right: 0px">Pro Shop</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
                 <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
 
                 <!-- toggle icons -->
-                <div class="header-bar d-lg-none">
+                <button class="header-bar d-lg-none" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">
                   <span></span>
                   <span></span>
                   <span></span>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -103,122 +108,119 @@
   <!-- ========== Header Section Ends Here========== -->
 
 
+  <main id="main-content">
 
-
-
-  <!-- ================> Page header start here <================== -->
-  <section class="page-header bg--cover contact"
-    style="background-image: url(assets/images/1_golf_images/shot_through_trees.JPG);">
-    <div class="container">
-      <div class="page-header__content text-center">
-        <h2>Contact Us</h2>
-        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-          <ol class="breadcrumb justify-content-center mb-0">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contact us</li>
-          </ol>
-        </nav>
+    <!-- ================> Page header start here <================== -->
+    <section class="page-header bg--cover contact"
+      style="background-image: url(assets/images/1_golf_images/shot_through_trees.JPG);">
+      <div class="container">
+        <div class="page-header__content text-center">
+          <h2>Contact Us</h2>
+          <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+            </ol>
+          </nav>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- ================> Page header end here <================== -->
+    </section>
+    <!-- ================> Page header end here <================== -->
 
 
 
 
-
-  <!-- ========== contact Section start Here========== -->
-  <section class="contact padding-top padding-bottom">
-    <div class="container">
-      <div class="contact__wrapper">
-        <div class="row g-5">
-          <div class="col-lg-5 col-xl-4"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-            <div class="contact__info">
-              <div class="common-header">
-                <h2>Golf Course Contact</h2>
+    <!-- ========== contact Section start Here========== -->
+    <section class="contact padding-top padding-bottom">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="row g-5">
+            <div class="col-lg-5 col-xl-4"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+              <div class="contact__info">
+                <div class="common-header">
+                  <h2>Golf Course Contact</h2>
+                </div>
+                <ul class="contact__info-list">
+                  <li class="contact__info-item">
+                    <div class="contact__info-icon" aria-hidden="true">
+                      <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact__info-content">
+                      <h6>Address</h6>
+                      <p style="line-height: 125%;">800 Louisville Rd.<br> Frankfort, KY 40601</p>
+                    </div>
+                  </li>
+                  <li class="contact__info-item">
+                    <div class="contact__info-icon" aria-hidden="true">
+                      <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact__info-content">
+                      <h6>Pro Shop</h6>
+                      <a href="tel:5028758559"><span>(502)
+                          875-8559</span></a>
+                    </div>
+                  </li>
+                  <li class="contact__info-item">
+                    <div class="contact__info-icon" aria-hidden="true">
+                      <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact__info-content">
+                      <h6>E-mail</h6>
+                      <p><a href="mailto:jhgcfrankfort@gmail.com">jhgcfrankfort@gmail.com</a> <br>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <ul class="contact__info-list">
-                <li class="contact__info-item">
-                  <div class="contact__info-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="contact__info-content">
-                    <h6>Address</h6>
-                    <p style="line-height: 125%;">800 Louisville Rd.<br> Frankfort, KY 40601</p>
-                  </div>
-                </li>
-                <li class="contact__info-item">
-                  <div class="contact__info-icon">
-                    <i class="fa-solid fa-phone"></i>
-                  </div>
-                  <div class="contact__info-content">
-                    <h6>Pro Shop</h6>
-                    <a href="tel:5028758559" target="_blank"><span>(502)
-                        875-8559</span></a>
-                  </div>
-                </li>
-                <li class="contact__info-item">
-                  <div class="contact__info-icon">
-                    <i class="fa-solid fa-envelope"></i>
-                  </div>
-                  <div class="contact__info-content">
-                    <h6>E-mail</h6>
-                    <p><a href="mailto:jhgcfrankfort@gmail.com">jhgcfrankfort@gmail.com</a> <br>
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
-          </div>
 
-          <!-- Kirk Card -->
-          <div class="col-lg-7 col-xl-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
-            <div class="contact__form kirk-card">
-              <div class="row">
-                <div class="col-6 col-md-4 col-lg-5 ">
-                  <img class="img-fluid rounded" src="assets/images/1_golf_images/Kirk.JPG"
-                    alt="Picture of Kirk Schooley, PGA Golf Pro">
-                </div>
-                <div class="col-6 col-md-8 col-lg-7">
-                  <div class="d-flex justify-content-end">
-                    <img class="pga-badge" src="assets/images/1_golf_images/memberPgaLogo.png" alt="PGA Member Badge">
+            <!-- Kirk Card -->
+            <div class="col-lg-7 col-xl-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
+              <div class="contact__form kirk-card">
+                <div class="row">
+                  <div class="col-6 col-md-4 col-lg-5 ">
+                    <img class="img-fluid rounded" src="assets/images/1_golf_images/Kirk.JPG"
+                      alt="Picture of Kirk Schooley, PGA Golf Pro">
                   </div>
-                  <div class="pt-0 pt-sm-3 pt-lg-1 pt-xl-5">
-                    <h4 class="">Golf Lessons & Clinics Available with PGA Golf Professional, Kirk Schooley</h4>
-                    <p>Call (502) 875-8559 for further instruction information.</p>
+                  <div class="col-6 col-md-8 col-lg-7">
+                    <div class="d-flex justify-content-end">
+                      <img class="pga-badge" src="assets/images/1_golf_images/memberPgaLogo.png" alt="PGA Member Badge">
+                    </div>
+                    <div class="pt-0 pt-sm-3 pt-lg-1 pt-xl-5">
+                      <h4 class="">Golf Lessons &amp; Clinics Available with PGA Golf Professional, Kirk Schooley</h4>
+                      <p>Call (502) 875-8559 for further instruction information.</p>
+                    </div>
+
                   </div>
 
                 </div>
 
               </div>
-
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ========== contact Section ends Here========== -->
+    </section>
+    <!-- ========== contact Section ends Here========== -->
 
 
 
 
-
-  <!-- ========== Map Section start Here========== -->
-  <div class="map paddding-top padding-bottom">
-    <div class="container">
-      <div class="map__wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10189.012712538602!2d-84.89149672791119!3d38.18582218312044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884274dd1fb67c8f%3A0x4499abf3494d7f04!2s800%20Louisville%20Rd%2C%20Frankfort%2C%20KY%2040601!5e0!3m2!1sen!2sus!4v1696529859439!5m2!1sen!2sus"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- ========== Map Section start Here========== -->
+    <div class="map paddding-top padding-bottom">
+      <div class="container">
+        <div class="map__wrapper">
+          <iframe
+            title="Google Maps location of Juniper Hill Golf Course"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10189.012712538602!2d-84.89149672791119!3d38.18582218312044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884274dd1fb67c8f%3A0x4499abf3494d7f04!2s800%20Louisville%20Rd%2C%20Frankfort%2C%20KY%2040601!5e0!3m2!1sen!2sus!4v1696529859439!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- ========== Map Section ends Here========== -->
+    <!-- ========== Map Section ends Here========== -->
 
-
-
+  </main>
 
 
   <!-- ========== Footer Section start Here========== -->
@@ -263,7 +265,7 @@
 
 
   <!-- scrollToTop start here -->
-  <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-up"></i></a>
+  <a href="#" class="scrollToTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
   <!-- scrollToTop ending here -->
 
   <!-- vendor plugins -->

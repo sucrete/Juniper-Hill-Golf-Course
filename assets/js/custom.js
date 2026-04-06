@@ -50,6 +50,9 @@
     $('.header-bar').on('click', function () {
         $(this).toggleClass('active');
         $('.menu').toggleClass('active');
+        var isExpanded = $(this).hasClass('active');
+        $(this).attr('aria-expanded', isExpanded ? 'true' : 'false');
+        $(this).attr('aria-label', isExpanded ? 'Close navigation menu' : 'Open navigation menu');
     })
 
     //Header

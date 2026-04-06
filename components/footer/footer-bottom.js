@@ -19,6 +19,7 @@ export class FooterBottom extends LitElement {
               href="https://portal.teequest.net/portal"
               target="_blank"
               class="text-white-50"
+              aria-label="Powered by TeeQuest (opens in new tab)"
             >
               <svg
                 class="svg-inline--fa fa-gears"

@@ -430,3 +430,34 @@ section {
 .breadcrumb-item+.breadcrumb-item::before {
   color: rgba(245, 245, 245, 0.726)
 }
+
+
+// ===== Accessibility =====
+
+// Skip Navigation Link
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: #15341c;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  z-index: 10000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+
+  &:focus {
+    top: 0;
+    outline: 3px solid #E8A41D;
+    outline-offset: 2px;
+  }
+}
+
+// Reset UA button styles for the hamburger menu toggle
+button.header-bar {
+  background: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}

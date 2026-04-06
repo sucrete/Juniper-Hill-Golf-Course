@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juniper Hill Golf Course</title>
+  <title>The Course | Juniper Hill Golf Course</title>
 
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
@@ -19,7 +19,7 @@
 
 
   <!-- main css for template -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- reusable Lit components -->
   <script type="module" src="./components/footer/about.js"></script>
@@ -48,8 +48,10 @@
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ===============>> Preloader start here <<================= -->
-  <div class="preloader">
+  <div class="preloader" aria-hidden="true">
     <div class="loader"></div>
   </div>
   <!-- ===============>> Preloader end here <<================= -->
@@ -63,19 +65,21 @@
         <div class="header-top open">
           <div class="container">
             <div class="header-top-area">
-              <ul class="left">
-                <li>
-                  <a href="tel:5028758559" target="_blank"><i class="fa-solid fa-phone"></i> <span>(502)
-                      875-8559</span></a>
-                </li>
-                <li>
-                  <a href="https://www.google.com/maps/place/800+Louisville+Rd,+Frankfort,+KY+40601/@38.1870876,-84.8920689,17z/data=!3m1!4b1!4m6!3m5!1s0x884274dd1fb67c8f:0x4499abf3494d7f04!8m2!3d38.1870834!4d-84.889494!16s%2Fg%2F11nfsfvnh5?entry=ttu"
-                    target="_blank"><i class="fa-solid fa-location-dot"></i> 800 Louisville Rd., Frankfort, KY 40601</a>
-                </li>
-                <li>
-                  <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
-                </li>
-              </ul>
+              <nav aria-label="Utility links">
+                <ul class="left">
+                  <li>
+                    <a href="tel:5028758559"><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>(502)
+                        875-8559</span></a>
+                  </li>
+                  <li>
+                    <a href="https://www.google.com/maps/place/800+Louisville+Rd,+Frankfort,+KY+40601/@38.1870876,-84.8920689,17z/data=!3m1!4b1!4m6!3m5!1s0x884274dd1fb67c8f:0x4499abf3494d7f04!8m2!3d38.1870834!4d-84.889494!16s%2Fg%2F11nfsfvnh5?entry=ttu"
+                      target="_blank"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 800 Louisville Rd., Frankfort, KY 40601<span class="visually-hidden"> (opens in new tab)</span></a>
+                  </li>
+                  <li>
+                    <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
 
@@ -85,34 +89,35 @@
             <div class="brand-logo d-none d-lg-inline-block">
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/images/logo/JHGC.svg" alt="logo">
+                  <img src="assets/images/logo/JHGC.svg" alt="Juniper Hill Golf Course">
                 </a>
               </div>
             </div>
             <div class="header-wrapper justify-content-lg-end">
               <div class="mobile-logo d-lg-none">
-                <a href="index.html"><img src="assets/images/logo/JHGC.svg" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/logo/JHGC.svg" alt="Juniper Hill Golf Course"></a>
               </div>
               <div class="menu-area">
-                <ul class="menu">
-                  <li><a href="rates.html" style="padding-right: 0px">Rates</a></li>
-                  <li>
-                    <a href="the-course.html" style="padding-right: 0px">The Course</a>
-                  </li>
-                  <li>
-                    <a href="pro-shop.html" style="padding-right: 0px">Pro Shop</a>
-                  </li>
-
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <nav aria-label="Main navigation">
+                  <ul class="menu" id="main-menu">
+                    <li><a href="rates.html" style="padding-right: 0px">Rates</a></li>
+                    <li>
+                      <a href="the-course.html" style="padding-right: 0px">The Course</a>
+                    </li>
+                    <li>
+                      <a href="pro-shop.html" style="padding-right: 0px">Pro Shop</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
                 <a href="book-tee-time.html" class="booking-btn"><span>Book a Tee Time</span></a>
 
                 <!-- toggle icons -->
-                <div class="header-bar d-lg-none">
+                <button class="header-bar d-lg-none" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">
                   <span></span>
                   <span></span>
                   <span></span>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -123,86 +128,87 @@
   <!-- ========== Header Section Ends Here========== -->
 
 
+  <main id="main-content">
 
-
-  <!-- ================> Page header start here <================== -->
-  <section class="page-header bg--cover course"
-    style="background-image: url(assets/images/1_golf_images/shot_down_on_fairway.JPG);">
-    <div class="container">
-      <div class="page-header__content text-center">
-        <h2>The Course</h2>
-        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-          <ol class="breadcrumb justify-content-center mb-0">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">The Course</li>
-          </ol>
-        </nav>
+    <!-- ================> Page header start here <================== -->
+    <section class="page-header bg--cover course"
+      style="background-image: url(assets/images/1_golf_images/shot_down_on_fairway.JPG);">
+      <div class="container">
+        <div class="page-header__content text-center">
+          <h2>The Course</h2>
+          <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">The Course</li>
+            </ol>
+          </nav>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- ================> Page header end here <================== -->
+    </section>
+    <!-- ================> Page header end here <================== -->
 
 
 
 
+    <!-- ========== Course Section start Here========== -->
 
-  <!-- ========== Course Section start Here========== -->
-
-  <section class="container padding-top padding-bottom course">
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <hole-one class="swiper-slide"></hole-one>
-        <hole-two class="swiper-slide"></hole-two>
-        <hole-three class="swiper-slide"></hole-three>
-        <hole-four class="swiper-slide"></hole-four>
-        <hole-five class="swiper-slide"></hole-five>
-        <hole-six class="swiper-slide"></hole-six>
-        <hole-seven class="swiper-slide"></hole-seven>
-        <hole-eight class="swiper-slide"></hole-eight>
-        <hole-nine class="swiper-slide"></hole-nine>
-        <hole-ten class="swiper-slide"></hole-ten>
-        <hole-eleven class="swiper-slide"></hole-eleven>
-        <hole-twelve class="swiper-slide"></hole-twelve>
-        <hole-thirteen class="swiper-slide"></hole-thirteen>
-        <hole-fourteen class="swiper-slide"></hole-fourteen>
-        <hole-fifteen class="swiper-slide"></hole-fifteen>
-        <hole-sixteen class="swiper-slide"></hole-sixteen>
-        <hole-seventeen class="swiper-slide"></hole-seventeen>
-        <hole-eighteen class="swiper-slide"></hole-eighteen>
+    <section class="container padding-top padding-bottom course">
+      <!-- Swiper -->
+      <div class="swiper mySwiper" role="region" aria-label="Golf course holes — use arrow keys or buttons to navigate">
+        <div class="swiper-wrapper">
+          <hole-one class="swiper-slide"></hole-one>
+          <hole-two class="swiper-slide"></hole-two>
+          <hole-three class="swiper-slide"></hole-three>
+          <hole-four class="swiper-slide"></hole-four>
+          <hole-five class="swiper-slide"></hole-five>
+          <hole-six class="swiper-slide"></hole-six>
+          <hole-seven class="swiper-slide"></hole-seven>
+          <hole-eight class="swiper-slide"></hole-eight>
+          <hole-nine class="swiper-slide"></hole-nine>
+          <hole-ten class="swiper-slide"></hole-ten>
+          <hole-eleven class="swiper-slide"></hole-eleven>
+          <hole-twelve class="swiper-slide"></hole-twelve>
+          <hole-thirteen class="swiper-slide"></hole-thirteen>
+          <hole-fourteen class="swiper-slide"></hole-fourteen>
+          <hole-fifteen class="swiper-slide"></hole-fifteen>
+          <hole-sixteen class="swiper-slide"></hole-sixteen>
+          <hole-seventeen class="swiper-slide"></hole-seventeen>
+          <hole-eighteen class="swiper-slide"></hole-eighteen>
+        </div>
+        <div class="swiper-button-prev" aria-label="Previous hole"></div>
+        <div class="swiper-button-next" aria-label="Next hole"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '" aria-label="Hole ' + (index + 1) + '">' + (index + 1) + "</span>";
+          },
         },
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      spaceBetween: 20,
-    });
-  </script>
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        keyboard: {
+          enabled: true,
+        },
+        spaceBetween: 20,
+      });
+    </script>
 
-  <!-- ========== Course Section ends Here========== -->
+    <!-- ========== Course Section ends Here========== -->
 
-
-
+  </main>
 
 
   <!-- ========== Footer Section start Here========== -->
@@ -247,7 +253,7 @@
 
 
   <!-- scrollToTop start here -->
-  <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-up"></i></a>
+  <a href="#" class="scrollToTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
   <!-- scrollToTop ending here -->
 
   <!-- vendor plugins -->
